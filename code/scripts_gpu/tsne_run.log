@@ -1,0 +1,45 @@
+nohup: ignoring input
+============================================================
+DrugMiR t-SNE Embedding Visualization (§4.8)
+============================================================
+Data dir: /home/featurize/work/DrugMiR/data/processed
+Device:   cuda
+  miRNAs=1578, drugs=156, genes=14455, positives=8720
+
+Training on full Dataset 1 (200 epochs)...
+  epoch 20/200  loss=0.2472
+  epoch 40/200  loss=0.2151
+  epoch 60/200  loss=0.1845
+  epoch 80/200  loss=0.1502
+  epoch 100/200  loss=0.1343
+  epoch 120/200  loss=0.1226
+  epoch 140/200  loss=0.1126
+  epoch 160/200  loss=0.1049
+  epoch 180/200  loss=0.1025
+  epoch 200/200  loss=0.0956
+Trained in 59s
+
+Extracting embeddings...
+  Saved embeddings.npz
+    m0: shape (1578, 256)
+    mh: shape (1578, 256)
+    mb: shape (1578, 256)
+    d0: shape (156, 256)
+    dh: shape (156, 256)
+    db: shape (156, 256)
+
+Running t-SNE on each channel...
+  m0: (1578 x 256) -> 2D, perp=30, 5s
+  mh: (1578 x 256) -> 2D, perp=30, 4s
+  mb: (1578 x 256) -> 2D, perp=30, 4s
+  d0: (156 x 256) -> 2D, perp=12, 0s
+  dh: (156 x 256) -> 2D, perp=12, 0s
+  db: (156 x 256) -> 2D, perp=12, 0s
+
+Drawing figure...
+  Saved ./results_tsne/fig_tsne.pdf
+  Saved ./results_tsne/fig_tsne.png
+
+============================================================
+DONE
+============================================================

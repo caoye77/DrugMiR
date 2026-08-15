@@ -1,0 +1,154 @@
+nohup: ignoring input
+============================================================
+DrugMiR Robustness + Convergence Analysis (§4.9)
+============================================================
+Data dir: /home/featurize/work/DrugMiR/data/processed
+Device:   cuda
+
+Hyperparameters: {'h': 256, 'dr': 0.5, 'n_gcn': 2, 'n_br': 2, 'lr': 0.0005, 'wd': 0.0002}
+
+Loading data...
+  miRNAs=1578, drugs=156, positives=8720
+
+>>> Experiment 1/2: Convergence (200 epochs)
+  epoch   1: train_auc=0.7145, val_auc=0.8928, val_aupr=0.8970
+  epoch   2: train_auc=0.8941, val_auc=0.9176, val_aupr=0.9144
+  epoch   4: train_auc=0.9322, val_auc=0.9360, val_aupr=0.9245
+  epoch   6: train_auc=0.9431, val_auc=0.9377, val_aupr=0.9268
+  epoch   8: train_auc=0.9458, val_auc=0.9414, val_aupr=0.9291
+  epoch  10: train_auc=0.9466, val_auc=0.9448, val_aupr=0.9334
+  epoch  12: train_auc=0.9495, val_auc=0.9469, val_aupr=0.9379
+  epoch  14: train_auc=0.9520, val_auc=0.9505, val_aupr=0.9425
+  epoch  16: train_auc=0.9535, val_auc=0.9541, val_aupr=0.9512
+  epoch  18: train_auc=0.9555, val_auc=0.9474, val_aupr=0.9406
+  epoch  20: train_auc=0.9558, val_auc=0.9534, val_aupr=0.9471
+  epoch  22: train_auc=0.9565, val_auc=0.9585, val_aupr=0.9541
+  epoch  24: train_auc=0.9574, val_auc=0.9499, val_aupr=0.9419
+  epoch  26: train_auc=0.9588, val_auc=0.9522, val_aupr=0.9474
+  epoch  28: train_auc=0.9615, val_auc=0.9560, val_aupr=0.9499
+  epoch  30: train_auc=0.9601, val_auc=0.9579, val_aupr=0.9546
+  epoch  32: train_auc=0.9630, val_auc=0.9492, val_aupr=0.9443
+  epoch  34: train_auc=0.9662, val_auc=0.9566, val_aupr=0.9519
+  epoch  36: train_auc=0.9641, val_auc=0.9546, val_aupr=0.9472
+  epoch  38: train_auc=0.9654, val_auc=0.9588, val_aupr=0.9557
+  epoch  40: train_auc=0.9656, val_auc=0.9538, val_aupr=0.9482
+  epoch  42: train_auc=0.9651, val_auc=0.9519, val_aupr=0.9445
+  epoch  44: train_auc=0.9686, val_auc=0.9548, val_aupr=0.9493
+  epoch  46: train_auc=0.9685, val_auc=0.9505, val_aupr=0.9432
+  epoch  48: train_auc=0.9695, val_auc=0.9565, val_aupr=0.9512
+  epoch  50: train_auc=0.9682, val_auc=0.9556, val_aupr=0.9523
+  epoch  52: train_auc=0.9699, val_auc=0.9528, val_aupr=0.9455
+  epoch  54: train_auc=0.9732, val_auc=0.9525, val_aupr=0.9456
+  epoch  56: train_auc=0.9726, val_auc=0.9537, val_aupr=0.9478
+  epoch  58: train_auc=0.9714, val_auc=0.9551, val_aupr=0.9487
+  epoch  60: train_auc=0.9715, val_auc=0.9549, val_aupr=0.9479
+  epoch  62: train_auc=0.9733, val_auc=0.9559, val_aupr=0.9492
+  epoch  64: train_auc=0.9758, val_auc=0.9490, val_aupr=0.9392
+  epoch  66: train_auc=0.9746, val_auc=0.9559, val_aupr=0.9529
+  epoch  68: train_auc=0.9762, val_auc=0.9559, val_aupr=0.9506
+  epoch  70: train_auc=0.9762, val_auc=0.9557, val_aupr=0.9528
+  epoch  72: train_auc=0.9790, val_auc=0.9511, val_aupr=0.9465
+  epoch  74: train_auc=0.9788, val_auc=0.9556, val_aupr=0.9518
+  epoch  76: train_auc=0.9774, val_auc=0.9547, val_aupr=0.9500
+  epoch  78: train_auc=0.9791, val_auc=0.9588, val_aupr=0.9547
+  epoch  80: train_auc=0.9806, val_auc=0.9584, val_aupr=0.9530
+  epoch  82: train_auc=0.9792, val_auc=0.9489, val_aupr=0.9419
+  epoch  84: train_auc=0.9813, val_auc=0.9513, val_aupr=0.9439
+  epoch  86: train_auc=0.9808, val_auc=0.9527, val_aupr=0.9456
+  epoch  88: train_auc=0.9819, val_auc=0.9546, val_aupr=0.9486
+  epoch  90: train_auc=0.9818, val_auc=0.9592, val_aupr=0.9540
+  epoch  92: train_auc=0.9823, val_auc=0.9569, val_aupr=0.9521
+  epoch  94: train_auc=0.9816, val_auc=0.9620, val_aupr=0.9601
+  epoch  96: train_auc=0.9791, val_auc=0.9582, val_aupr=0.9550
+  epoch  98: train_auc=0.9833, val_auc=0.9548, val_aupr=0.9490
+  epoch 100: train_auc=0.9831, val_auc=0.9533, val_aupr=0.9468
+  epoch 102: train_auc=0.9850, val_auc=0.9558, val_aupr=0.9530
+  epoch 104: train_auc=0.9854, val_auc=0.9579, val_aupr=0.9546
+  epoch 106: train_auc=0.9862, val_auc=0.9580, val_aupr=0.9532
+  epoch 108: train_auc=0.9857, val_auc=0.9607, val_aupr=0.9563
+  epoch 110: train_auc=0.9850, val_auc=0.9522, val_aupr=0.9479
+  epoch 112: train_auc=0.9865, val_auc=0.9551, val_aupr=0.9492
+  epoch 114: train_auc=0.9856, val_auc=0.9528, val_aupr=0.9480
+  epoch 116: train_auc=0.9849, val_auc=0.9625, val_aupr=0.9592
+  epoch 118: train_auc=0.9855, val_auc=0.9577, val_aupr=0.9537
+  epoch 120: train_auc=0.9845, val_auc=0.9615, val_aupr=0.9587
+  epoch 122: train_auc=0.9882, val_auc=0.9534, val_aupr=0.9478
+  epoch 124: train_auc=0.9855, val_auc=0.9615, val_aupr=0.9583
+  epoch 126: train_auc=0.9866, val_auc=0.9570, val_aupr=0.9503
+  epoch 128: train_auc=0.9883, val_auc=0.9575, val_aupr=0.9534
+  epoch 130: train_auc=0.9871, val_auc=0.9594, val_aupr=0.9554
+  epoch 132: train_auc=0.9875, val_auc=0.9529, val_aupr=0.9484
+  epoch 134: train_auc=0.9856, val_auc=0.9586, val_aupr=0.9573
+  epoch 136: train_auc=0.9860, val_auc=0.9591, val_aupr=0.9551
+  epoch 138: train_auc=0.9876, val_auc=0.9530, val_aupr=0.9470
+  epoch 140: train_auc=0.9877, val_auc=0.9569, val_aupr=0.9529
+  epoch 142: train_auc=0.9893, val_auc=0.9638, val_aupr=0.9621
+  epoch 144: train_auc=0.9872, val_auc=0.9533, val_aupr=0.9506
+  epoch 146: train_auc=0.9888, val_auc=0.9585, val_aupr=0.9540
+  epoch 148: train_auc=0.9885, val_auc=0.9618, val_aupr=0.9598
+  epoch 150: train_auc=0.9887, val_auc=0.9622, val_aupr=0.9614
+  epoch 152: train_auc=0.9887, val_auc=0.9607, val_aupr=0.9590
+  epoch 154: train_auc=0.9890, val_auc=0.9623, val_aupr=0.9603
+  epoch 156: train_auc=0.9908, val_auc=0.9586, val_aupr=0.9568
+  epoch 158: train_auc=0.9888, val_auc=0.9525, val_aupr=0.9480
+  epoch 160: train_auc=0.9901, val_auc=0.9557, val_aupr=0.9533
+  epoch 162: train_auc=0.9897, val_auc=0.9619, val_aupr=0.9561
+  epoch 164: train_auc=0.9900, val_auc=0.9561, val_aupr=0.9501
+  epoch 166: train_auc=0.9897, val_auc=0.9569, val_aupr=0.9537
+  epoch 168: train_auc=0.9890, val_auc=0.9574, val_aupr=0.9531
+  epoch 170: train_auc=0.9878, val_auc=0.9558, val_aupr=0.9513
+  epoch 172: train_auc=0.9898, val_auc=0.9588, val_aupr=0.9554
+  epoch 174: train_auc=0.9902, val_auc=0.9576, val_aupr=0.9517
+  epoch 176: train_auc=0.9893, val_auc=0.9563, val_aupr=0.9542
+  epoch 178: train_auc=0.9904, val_auc=0.9611, val_aupr=0.9578
+  epoch 180: train_auc=0.9908, val_auc=0.9585, val_aupr=0.9572
+  epoch 182: train_auc=0.9910, val_auc=0.9589, val_aupr=0.9553
+  epoch 184: train_auc=0.9912, val_auc=0.9569, val_aupr=0.9523
+  epoch 186: train_auc=0.9916, val_auc=0.9543, val_aupr=0.9510
+  epoch 188: train_auc=0.9896, val_auc=0.9565, val_aupr=0.9548
+  epoch 190: train_auc=0.9911, val_auc=0.9603, val_aupr=0.9568
+  epoch 192: train_auc=0.9909, val_auc=0.9630, val_aupr=0.9627
+  epoch 194: train_auc=0.9916, val_auc=0.9599, val_aupr=0.9570
+  epoch 196: train_auc=0.9916, val_auc=0.9573, val_aupr=0.9546
+  epoch 198: train_auc=0.9916, val_auc=0.9575, val_aupr=0.9542
+  epoch 200: train_auc=0.9919, val_auc=0.9578, val_aupr=0.9551
+Convergence done in 49s
+
+>>> Experiment 2/2: False-negative robustness
+
+--- False-negative ratio = 0% ---
+  fold 1: AUC=0.9561, AUPR=0.9514
+  fold 2: AUC=0.9570, AUPR=0.9537
+  fold 3: AUC=0.9588, AUPR=0.9541
+
+--- False-negative ratio = 5% ---
+  fold 1: AUC=0.9531, AUPR=0.9485
+  fold 2: AUC=0.9572, AUPR=0.9533
+  fold 3: AUC=0.9556, AUPR=0.9505
+
+--- False-negative ratio = 10% ---
+  fold 1: AUC=0.9533, AUPR=0.9482
+  fold 2: AUC=0.9536, AUPR=0.9470
+  fold 3: AUC=0.9567, AUPR=0.9504
+
+--- False-negative ratio = 20% ---
+  fold 1: AUC=0.9537, AUPR=0.9490
+  fold 2: AUC=0.9530, AUPR=0.9493
+  fold 3: AUC=0.9555, AUPR=0.9503
+
+--- False-negative ratio = 30% ---
+  fold 1: AUC=0.9540, AUPR=0.9488
+  fold 2: AUC=0.9540, AUPR=0.9497
+  fold 3: AUC=0.9530, AUPR=0.9493
+Robustness done in 178s
+
+============================================================
+ALL EXPERIMENTS COMPLETE
+============================================================
+Files written to ./results_robustness:
+  convergence.json  (13.1 KB)
+  fig_convergence.pdf  (16.1 KB)
+  fig_convergence.png  (128.0 KB)
+  fig_robustness.pdf  (17.6 KB)
+  fig_robustness.png  (130.7 KB)
+  robustness.json  (0.9 KB)

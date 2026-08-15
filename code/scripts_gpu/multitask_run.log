@@ -1,0 +1,37 @@
+nohup: ignoring input
+============================================================
+DrugMiR Multi-task Experiment (§4.7)
+Architecture: shared 3-channel encoder + 2 parallel heads
+Loss: L_multi = BCE_res + BCE_sen  (eq. 16)
+============================================================
+Data dir: /home/featurize/work/DrugMiR/data/processed
+Device:   cuda
+
+Loading data...
+  miRNAs=1578, drugs=156, genes=14455
+  Resistance pairs: 4448
+  Sensitivity pairs: 4235
+  Dual-effect pairs (both res & sen): 1158 / 7525 = 15.39%
+  Loaded in 0.9s
+
+Hyperparameters: {'h': 256, 'dr': 0.5, 'n_gcn': 2, 'n_br': 2, 'lr': 0.0005, 'wd': 0.0002, 'epochs': 200, 'patience': 15}
+
+--- Fold 1/5 ---
+  Best: Res AUC=0.9660 AUPR=0.9622  Sen AUC=0.9566 AUPR=0.9543  (44s)
+--- Fold 2/5 ---
+  Best: Res AUC=0.9603 AUPR=0.9590  Sen AUC=0.9563 AUPR=0.9548  (77s)
+--- Fold 3/5 ---
+  Best: Res AUC=0.9680 AUPR=0.9654  Sen AUC=0.9522 AUPR=0.9522  (80s)
+--- Fold 4/5 ---
+  Best: Res AUC=0.9625 AUPR=0.9595  Sen AUC=0.9536 AUPR=0.9514  (41s)
+--- Fold 5/5 ---
+  Best: Res AUC=0.9635 AUPR=0.9591  Sen AUC=0.9530 AUPR=0.9525  (45s)
+
+============================================================
+FINAL RESULTS (5-fold CV, seed=42, Hybrid encoder)
+============================================================
+Resistance:  AUC = 0.9641 ± 0.0027, AUPR = 0.9610 ± 0.0025
+Sensitivity: AUC = 0.9543 ± 0.0018, AUPR = 0.9530 ± 0.0013
+Macro avg:   AUC = 0.9592, AUPR = 0.9570
+
+Results written to: ./results_multitask/multitask_hybrid_results.json
