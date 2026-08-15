@@ -7,14 +7,17 @@ DrugMiR predicts miRNA-mediated drug resistance and sensitivity from a heterogen
 ## Repository layout
 
 ```
-code/                  model, experiments and figure scripts
-  src/                 core model definition
-  scripts_gpu/         experiment harnesses
-  load_matrix.py       loader for the released gene-interaction matrices
+code/                    model, experiments and figure scripts
+  src/                   core model definition
+  scripts_gpu/           experiment harnesses
+  load_matrix.py         loader for the released gene-interaction matrices
 data/
-  dataset1/            D1, curated from ncRNADrug
-  dataset2/            D2, curated from NoncoRNA and ncDR
-results/               result files backing every table and figure
+  dataset1/              D1, curated from ncRNADrug
+  dataset2/              D2, curated from NoncoRNA and ncDR
+results_final/           main comparison, case study, attribution, efficiency
+ablation_outputs/        channel ablation, five seeds
+coldstart_drugmir/       inductive (cold-start) results for DrugMiR
+coldstart_baselines/     inductive (cold-start) results for the four baselines
 ```
 
 ## Datasets
@@ -31,15 +34,15 @@ results/               result files backing every table and figure
 
 Each dataset directory contains:
 
-| File                                        | Contents                                       |
-| ------------------------------------------- | ---------------------------------------------- |
-| `association_matrix.npy`                    | binary miRNA × drug association matrix         |
-| `resistance_matrix.npy`                     | resistance-only associations                   |
-| `sensitivity_matrix.npy`                    | sensitivity-only associations                  |
-| `mirna_kmer_features.npy`                   | 256-dimensional 4-mer frequency vectors        |
-| `drug_morgan_features.npy`                  | 1024-bit Morgan fingerprints                   |
-| `mirna_similarity.npy`, `drug_similarity.npy` | pairwise similarity matrices                 |
-| `mirna_gene_matrix.npz`, `drug_gene_matrix.npz` | gene-interaction matrices, scipy CSR       |
+| File                                        | Contents                                |
+| ------------------------------------------- | --------------------------------------- |
+| `association_matrix.npy`                    | binary miRNA × drug association matrix  |
+| `resistance_matrix.npy`                     | resistance-only associations            |
+| `sensitivity_matrix.npy`                    | sensitivity-only associations           |
+| `mirna_kmer_features.npy`                   | 256-dimensional 4-mer frequency vectors |
+| `drug_morgan_features.npy`                  | 1024-bit Morgan fingerprints            |
+| `mirna_similarity.npy`, `drug_similarity.npy` | pairwise similarity matrices          |
+| `mirna_gene_matrix.npz`, `drug_gene_matrix.npz` | gene-interaction matrices, scipy CSR |
 
 The two gene-interaction matrices are around 1% non-zero and are released in sparse CSR format rather than as dense arrays. Load them with the provided helper:
 
@@ -60,18 +63,19 @@ A CUDA-capable GPU is recommended but not required. The model holds 7.1M paramet
 
 ## Reproducing the results
 
-| Experiment                      | Script                            |
-| ------------------------------- | --------------------------------- |
-| Main comparison                 | `run_multiseed.py`                |
-| Significance analysis           | `sig_analysis.py`                 |
-| Cold-start evaluation           | `run_drugmir_coldstart.py`        |
-| Channel ablation                | `run_ablation_multiseed.py`       |
-| Bridge-gene attribution         | `compute_ig_bridge.py`            |
-| Computational cost              | `exp_efficiency.py`               |
-| ROC and PR curves               | `rerun_drugmir_save_preds_v2.py`  |
-| Fusion-gate analysis            | `gate_viz.py`                     |
+| Experiment              | Script                           | Output directory       |
+| ----------------------- | -------------------------------- | ---------------------- |
+| Main comparison         | `run_multiseed.py`               | `results_final/`       |
+| Significance analysis   | `sig_analysis.py`                | `results_final/`       |
+| Cold-start evaluation   | `run_drugmir_coldstart.py`       | `coldstart_drugmir/`   |
+| Cold-start baselines    | `run_mphgnn_coldstart_v4.py` and companions | `coldstart_baselines/` |
+| Channel ablation        | `run_ablation_multiseed.py`      | `ablation_outputs/`    |
+| Bridge-gene attribution | `compute_ig_bridge.py`           | `results_final/`       |
+| Computational cost      | `exp_efficiency.py`              | `results_final/`       |
+| ROC and PR curves       | `rerun_drugmir_save_preds_v2.py` | `results_final/`       |
+| Fusion-gate analysis    | `gate_viz.py`                    | `results_final/`       |
 
-Result files under `results/` correspond to the tables and figures reported in the article.
+The released result files correspond to the tables and figures reported in the article.
 
 ## License
 
