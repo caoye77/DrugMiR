@@ -1,0 +1,83 @@
+Device: cuda
+============================================================
+Integrated Gradients on gene embedding (DrugMiR_Hybrid, D1, seed=42)
+============================================================
+  Loaded checkpoint with val AUC = 0.9637
+  Shapes: {'nm': 1578, 'nd': 156, 'md': 256, 'dd': 1024, 'ng': 14455}
+  Total positive pairs: 8720
+  Batched into 18 batches of size <= 512
+  Sanity: first batch pos pair scores: mean=0.9443, min=0.0042, max=0.9998
+
+  Computing IG with n_steps=50 ...
+    Batch 1/18 done
+    Batch 2/18 done
+    Batch 3/18 done
+    Batch 4/18 done
+    Batch 5/18 done
+    Batch 6/18 done
+    Batch 7/18 done
+    Batch 8/18 done
+    Batch 9/18 done
+    Batch 10/18 done
+    Batch 11/18 done
+    Batch 12/18 done
+    Batch 13/18 done
+    Batch 14/18 done
+    Batch 15/18 done
+    Batch 16/18 done
+    Batch 17/18 done
+    Batch 18/18 done
+  IG done in 22s
+  ig shape: (14455, 256)
+  gene_importance range: min=0.0005, max=7.0568, mean=0.0926
+
+  Active bridge genes (mirna_deg>0 AND drug_deg>0): 13807
+
+  ==============================================================================
+  TOP-20 BRIDGE GENES (RANKED BY IG IMPORTANCE)
+  ==============================================================================
+  Rank  Gene                IG_imp  old_rank   miRNA_deg  Drug_deg    OldScore
+  ------------------------------------------------------------------------------
+  1     HSF1                7.0568      7210           2        22          44
+  2     CASP3               5.1124        27          32       102        3264
+  3     RARG                3.9645      6244           6        10          60
+  4     BCL2                3.8867         9          66        86        5676
+  5     EDN1                3.7851        85          44        33        1452
+  6     EFEMP1              3.6122      9093           1        23          23
+  7     MAPK1               3.2225         3         116        75        8700
+  8     CYP3A4              3.0242      5964           1        67          67
+  9     BAX                 2.9383       147          15        75        1125
+  10    AKT1                2.8997        16          62        73        4526
+  11    ALK                 2.8150      9799           2         9          18
+  12    MAPK3               2.7832       853           6        74         444
+  13    MCL1                2.6865        25          75        44        3300
+  14    BCL2L1              2.3244         8         101        57        5757
+  15    PTGS2               2.2360       209          18        54         972
+  16    CASP9               2.2178       843           7        64         448
+  17    RELA                2.1995        78          26        58        1508
+  18    PARP1               2.1516        15          57        80        4560
+  19    CASP8               2.1472        45          32        69        2208
+  20    CCND1               2.0425         2         170        64       10880
+
+  ==============================================================================
+  OLD TOP-10 BRIDGE GENES (BY DEGREE PRODUCT, for comparison)
+  ==============================================================================
+  Rank  Gene              OldScore      IG_imp   IG_rank
+  ------------------------------------------------------------------------------
+  1     CDKN1A               16272      1.5755        32
+  2     CCND1                10880      2.0425        20
+  3     MAPK1                 8700      3.2225         7
+  4     TP53                  7872      1.7265        28
+  5     SOD2                  6601      1.0492        64
+  6     MYC                   6283      1.5745        33
+  7     IGF1R                 6264      1.1349        51
+  8     BCL2L1                5757      2.3244        14
+  9     BCL2                  5676      3.8867         4
+  10    XIAP                  5661      0.8115        88
+
+  Total IG run time: 23s
+
+  Saved:
+    /home/featurize/work/DrugMiR/results_final/gene_ig_importance_d1.npy  (shape: (14455,))
+    /home/featurize/work/DrugMiR/results_final/gene_ig_full_d1.npy        (shape: (14455, 256))
+    /home/featurize/work/DrugMiR/results_final/bridge_genes_ig_top20.csv

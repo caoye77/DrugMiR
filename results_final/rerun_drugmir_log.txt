@@ -1,0 +1,39 @@
+Device: cuda
+D1 path: /home/featurize/DrugMiR/data/dataset1
+
+============================================================
+Loading Dataset 1 from /home/featurize/DrugMiR/data/dataset1
+============================================================
+  n_mirna=1578, n_drug=156, n_gene=14455
+  n_positive=8720
+  fold 1/5: AUC=0.9462, AUPR=0.9379, time=31s
+  fold 2/5: AUC=0.9450, AUPR=0.9362, time=34s
+  fold 3/5: AUC=0.9530, AUPR=0.9475, time=34s
+  fold 4/5: AUC=0.9516, AUPR=0.9479, time=69s
+  fold 5/5: AUC=0.9562, AUPR=0.9485, time=62s
+
+  Dataset 1: AUC = 0.9504 +/- 0.0042
+  Dataset 1: AUPR = 0.9436 +/- 0.0054
+  Total: 230s
+
+D2 path: /home/featurize/work/DrugMiR/DMGAT_processed
+
+============================================================
+Loading Dataset 2 from /home/featurize/work/DrugMiR/DMGAT_processed
+============================================================
+  n_mirna=622, n_drug=121, n_gene=14455
+  n_positive=2686
+  fold 1/5: AUC=0.9440, AUPR=0.9342, time=18s
+  fold 2/5: AUC=0.9331, AUPR=0.9255, time=18s
+  fold 3/5: AUC=0.9450, AUPR=0.9500, time=18s
+  fold 4/5: AUC=0.9404, AUPR=0.9396, time=16s
+  fold 5/5: AUC=0.9392, AUPR=0.9285, time=17s
+
+  Dataset 2: AUC = 0.9403 +/- 0.0042
+  Dataset 2: AUPR = 0.9356 +/- 0.0087
+  Total: 86s
+
+Saved: results_final/drugmir_d1_predictions_seed42.json
+Saved: results_final/drugmir_d2_predictions_seed42.json
+
+Done.

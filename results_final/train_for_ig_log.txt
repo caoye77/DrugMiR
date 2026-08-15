@@ -1,0 +1,20 @@
+Device: cuda
+============================================================
+Training DrugMiR_Hybrid on D1 (seed=42) for IG analysis
+============================================================
+  n_mirna=1578, n_drug=156, n_gene=14455
+  pos_pairs=8720
+  Train pos: 6976, Val pos: 1744
+    epoch 5: loss=0.2895 | val AUC=0.9422 AUPR=0.9344 ★
+    epoch 10: loss=0.2621 | val AUC=0.9438 AUPR=0.9338 ★
+    epoch 15: loss=0.2515 | val AUC=0.9529 AUPR=0.9457 ★
+    epoch 20: loss=0.2331 | val AUC=0.9561 AUPR=0.9506 ★
+    epoch 50: loss=0.1729 | val AUC=0.9565 AUPR=0.9529 ★
+    epoch 55: loss=0.1636 | val AUC=0.9586 AUPR=0.9555 ★
+    epoch 70: loss=0.1409 | val AUC=0.9613 AUPR=0.9579 ★
+    epoch 85: loss=0.1263 | val AUC=0.9637 AUPR=0.9615 ★
+    epoch 160: early stop (no improvement for 15 evals)
+
+  ★ Saved checkpoint: /home/featurize/work/DrugMiR/results_final/drugmir_d1_seed42_for_ig.pt
+  ★ Best val AUC: 0.9637
+  Total time: 56s

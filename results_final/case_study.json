@@ -1,0 +1,644 @@
+{
+  "Sorafenib": {
+    "drug_idx": 19,
+    "drug_name": "Sorafenib",
+    "known_count": 219,
+    "top20": [
+      {
+        "rank": 1,
+        "mirna": "hsa-miR-497-5p",
+        "score": 0.9884721636772156
+      },
+      {
+        "rank": 2,
+        "mirna": "hsa-miR-9-5p",
+        "score": 0.988045072555542
+      },
+      {
+        "rank": 3,
+        "mirna": "hsa-miR-15a-5p",
+        "score": 0.9876433968544006
+      },
+      {
+        "rank": 4,
+        "mirna": "hsa-miR-16-5p",
+        "score": 0.9874294877052308
+      },
+      {
+        "rank": 5,
+        "mirna": "hsa-miR-584-5p",
+        "score": 0.9869040727615357
+      },
+      {
+        "rank": 6,
+        "mirna": "hsa-let-7e-5p",
+        "score": 0.986626672744751
+      },
+      {
+        "rank": 7,
+        "mirna": "hsa-miR-218-5p",
+        "score": 0.9857217907905579
+      },
+      {
+        "rank": 8,
+        "mirna": "hsa-miR-30c-5p",
+        "score": 0.9853375196456909
+      },
+      {
+        "rank": 9,
+        "mirna": "hsa-miR-629-5p",
+        "score": 0.9846948266029358
+      },
+      {
+        "rank": 10,
+        "mirna": "hsa-miR-502-5p",
+        "score": 0.9823674082756042
+      },
+      {
+        "rank": 11,
+        "mirna": "hsa-miR-30b-5p",
+        "score": 0.982075834274292
+      },
+      {
+        "rank": 12,
+        "mirna": "hsa-miR-197-3p",
+        "score": 0.9809910297393799
+      },
+      {
+        "rank": 13,
+        "mirna": "hsa-let-7a-5p",
+        "score": 0.9804230332374573
+      },
+      {
+        "rank": 14,
+        "mirna": "hsa-miR-29c-3p",
+        "score": 0.9803898215293885
+      },
+      {
+        "rank": 15,
+        "mirna": "hsa-miR-320a-3p",
+        "score": 0.980381965637207
+      },
+      {
+        "rank": 16,
+        "mirna": "hsa-miR-138-5p",
+        "score": 0.9797926306724548
+      },
+      {
+        "rank": 17,
+        "mirna": "hsa-miR-15b-5p",
+        "score": 0.9771407008171081
+      },
+      {
+        "rank": 18,
+        "mirna": "hsa-miR-30d-5p",
+        "score": 0.9760306358337403
+      },
+      {
+        "rank": 19,
+        "mirna": "hsa-miR-452-5p",
+        "score": 0.9754865527153015
+      },
+      {
+        "rank": 20,
+        "mirna": "hsa-miR-139-5p",
+        "score": 0.9750071883201599
+      }
+    ]
+  },
+  "Doxorubicin": {
+    "drug_idx": 6,
+    "drug_name": "Doxorubicin",
+    "known_count": 616,
+    "top20": [
+      {
+        "rank": 1,
+        "mirna": "hsa-miR-24-3p",
+        "score": 0.9973128080368042
+      },
+      {
+        "rank": 2,
+        "mirna": "hsa-miR-638",
+        "score": 0.9922841668128968
+      },
+      {
+        "rank": 3,
+        "mirna": "hsa-miR-1247-5p",
+        "score": 0.9875880599021911
+      },
+      {
+        "rank": 4,
+        "mirna": "hsa-miR-374b-5p",
+        "score": 0.9855764150619507
+      },
+      {
+        "rank": 5,
+        "mirna": "hsa-miR-585-3p",
+        "score": 0.9844614386558532
+      },
+      {
+        "rank": 6,
+        "mirna": "hsa-miR-744-5p",
+        "score": 0.982890272140503
+      },
+      {
+        "rank": 7,
+        "mirna": "hsa-miR-105-5p",
+        "score": 0.9828764081001282
+      },
+      {
+        "rank": 8,
+        "mirna": "hsa-miR-302d-3p",
+        "score": 0.9826919913291932
+      },
+      {
+        "rank": 9,
+        "mirna": "hsa-miR-598-3p",
+        "score": 0.9824525237083435
+      },
+      {
+        "rank": 10,
+        "mirna": "hsa-miR-193a-5p",
+        "score": 0.9785005927085877
+      },
+      {
+        "rank": 11,
+        "mirna": "hsa-miR-200c-5p",
+        "score": 0.9770843863487244
+      },
+      {
+        "rank": 12,
+        "mirna": "hsa-miR-518f-3p",
+        "score": 0.9765564560890198
+      },
+      {
+        "rank": 13,
+        "mirna": "hsa-miR-658",
+        "score": 0.9765535831451416
+      },
+      {
+        "rank": 14,
+        "mirna": "hsa-miR-363-3p",
+        "score": 0.9763811826705933
+      },
+      {
+        "rank": 15,
+        "mirna": "hsa-miR-1202",
+        "score": 0.9726219177246094
+      },
+      {
+        "rank": 16,
+        "mirna": "hsa-miR-520e-3p",
+        "score": 0.9711217999458313
+      },
+      {
+        "rank": 17,
+        "mirna": "hsa-miR-519a-3p",
+        "score": 0.9707416534423828
+      },
+      {
+        "rank": 18,
+        "mirna": "hsa-miR-3196",
+        "score": 0.9666878938674927
+      },
+      {
+        "rank": 19,
+        "mirna": "hsa-miR-486-3p",
+        "score": 0.965913736820221
+      },
+      {
+        "rank": 20,
+        "mirna": "hsa-miR-449b-5p",
+        "score": 0.9653448581695556
+      }
+    ]
+  },
+  "Cisplatin": {
+    "drug_idx": 11,
+    "drug_name": "Cisplatin",
+    "known_count": 862,
+    "top20": [
+      {
+        "rank": 1,
+        "mirna": "hsa-miR-450a-5p",
+        "score": 0.995559549331665
+      },
+      {
+        "rank": 2,
+        "mirna": "hsa-miR-4674",
+        "score": 0.9926113963127137
+      },
+      {
+        "rank": 3,
+        "mirna": "hsa-miR-4734",
+        "score": 0.9924353241920472
+      },
+      {
+        "rank": 4,
+        "mirna": "hsa-miR-624-5p",
+        "score": 0.9922768235206604
+      },
+      {
+        "rank": 5,
+        "mirna": "hsa-miR-585-3p",
+        "score": 0.9920466423034668
+      },
+      {
+        "rank": 6,
+        "mirna": "hsa-miR-4488",
+        "score": 0.9913408637046814
+      },
+      {
+        "rank": 7,
+        "mirna": "hsa-miR-589-5p",
+        "score": 0.9906216621398926
+      },
+      {
+        "rank": 8,
+        "mirna": "hsa-miR-4516",
+        "score": 0.9897088885307312
+      },
+      {
+        "rank": 9,
+        "mirna": "hsa-miR-3185",
+        "score": 0.989549994468689
+      },
+      {
+        "rank": 10,
+        "mirna": "hsa-miR-1303",
+        "score": 0.9887938380241394
+      },
+      {
+        "rank": 11,
+        "mirna": "hsa-miR-301b-3p",
+        "score": 0.9882494568824768
+      },
+      {
+        "rank": 12,
+        "mirna": "hsa-miR-577",
+        "score": 0.9880193710327149
+      },
+      {
+        "rank": 13,
+        "mirna": "hsa-miR-4485-3p",
+        "score": 0.9875141143798828
+      },
+      {
+        "rank": 14,
+        "mirna": "hsa-miR-3188",
+        "score": 0.9873493909835815
+      },
+      {
+        "rank": 15,
+        "mirna": "hsa-miR-1225-5p",
+        "score": 0.986728823184967
+      },
+      {
+        "rank": 16,
+        "mirna": "hsa-miR-4745-5p",
+        "score": 0.9864937901496887
+      },
+      {
+        "rank": 17,
+        "mirna": "hsa-miR-602",
+        "score": 0.9862434506416321
+      },
+      {
+        "rank": 18,
+        "mirna": "hsa-miR-3126-3p",
+        "score": 0.9860615015029908
+      },
+      {
+        "rank": 19,
+        "mirna": "hsa-miR-4707-5p",
+        "score": 0.9846392035484314
+      },
+      {
+        "rank": 20,
+        "mirna": "hsa-miR-572",
+        "score": 0.9837978959083558
+      }
+    ]
+  },
+  "Gemcitabine": {
+    "drug_idx": 4,
+    "drug_name": "Gemcitabine",
+    "known_count": 592,
+    "top20": [
+      {
+        "rank": 1,
+        "mirna": "hsa-miR-92a-3p",
+        "score": 0.9953604459762573
+      },
+      {
+        "rank": 2,
+        "mirna": "hsa-miR-30c-5p",
+        "score": 0.9953226685523987
+      },
+      {
+        "rank": 3,
+        "mirna": "hsa-miR-103a-3p",
+        "score": 0.9952101111412048
+      },
+      {
+        "rank": 4,
+        "mirna": "hsa-miR-137-3p",
+        "score": 0.9949132084846497
+      },
+      {
+        "rank": 5,
+        "mirna": "hsa-miR-374a-5p",
+        "score": 0.9932437777519226
+      },
+      {
+        "rank": 6,
+        "mirna": "hsa-miR-1224-5p",
+        "score": 0.9923022031784058
+      },
+      {
+        "rank": 7,
+        "mirna": "hsa-let-7g-5p",
+        "score": 0.9917582273483276
+      },
+      {
+        "rank": 8,
+        "mirna": "hsa-miR-107",
+        "score": 0.9915282964706421
+      },
+      {
+        "rank": 9,
+        "mirna": "hsa-let-7e-3p",
+        "score": 0.9907186388969421
+      },
+      {
+        "rank": 10,
+        "mirna": "hsa-miR-1909-3p",
+        "score": 0.9898990273475647
+      },
+      {
+        "rank": 11,
+        "mirna": "hsa-miR-212-3p",
+        "score": 0.9877557516098022
+      },
+      {
+        "rank": 12,
+        "mirna": "hsa-miR-382-5p",
+        "score": 0.9867285370826722
+      },
+      {
+        "rank": 13,
+        "mirna": "hsa-miR-379-5p",
+        "score": 0.9856251120567322
+      },
+      {
+        "rank": 14,
+        "mirna": "hsa-miR-485-3p",
+        "score": 0.9842879414558411
+      },
+      {
+        "rank": 15,
+        "mirna": "hsa-miR-95-3p",
+        "score": 0.9842357993125915
+      },
+      {
+        "rank": 16,
+        "mirna": "hsa-miR-3196",
+        "score": 0.9841389775276184
+      },
+      {
+        "rank": 17,
+        "mirna": "hsa-miR-572",
+        "score": 0.9833950281143189
+      },
+      {
+        "rank": 18,
+        "mirna": "hsa-miR-505-3p",
+        "score": 0.9832569718360901
+      },
+      {
+        "rank": 19,
+        "mirna": "hsa-miR-92a-1-5p",
+        "score": 0.9831232070922852
+      },
+      {
+        "rank": 20,
+        "mirna": "hsa-miR-637",
+        "score": 0.9826777577400208
+      }
+    ]
+  },
+  "Docetaxel": {
+    "drug_idx": 5,
+    "drug_name": "Docetaxel",
+    "known_count": 223,
+    "top20": [
+      {
+        "rank": 1,
+        "mirna": "hsa-let-7b-5p",
+        "score": 0.9866976499557495
+      },
+      {
+        "rank": 2,
+        "mirna": "hsa-miR-29b-3p",
+        "score": 0.9856703996658325
+      },
+      {
+        "rank": 3,
+        "mirna": "hsa-miR-23b-3p",
+        "score": 0.9833665132522583
+      },
+      {
+        "rank": 4,
+        "mirna": "hsa-let-7b-3p",
+        "score": 0.9831514120101928
+      },
+      {
+        "rank": 5,
+        "mirna": "hsa-miR-30b-5p",
+        "score": 0.9814645886421204
+      },
+      {
+        "rank": 6,
+        "mirna": "hsa-miR-221-3p",
+        "score": 0.9785931587219239
+      },
+      {
+        "rank": 7,
+        "mirna": "hsa-miR-182-5p",
+        "score": 0.9756015300750732
+      },
+      {
+        "rank": 8,
+        "mirna": "hsa-miR-19a-3p",
+        "score": 0.9754214286804199
+      },
+      {
+        "rank": 9,
+        "mirna": "hsa-miR-19b-3p",
+        "score": 0.9727544069290162
+      },
+      {
+        "rank": 10,
+        "mirna": "hsa-miR-140-5p",
+        "score": 0.972626531124115
+      },
+      {
+        "rank": 11,
+        "mirna": "hsa-let-7e-5p",
+        "score": 0.9705666780471802
+      },
+      {
+        "rank": 12,
+        "mirna": "hsa-miR-494-3p",
+        "score": 0.9605286121368408
+      },
+      {
+        "rank": 13,
+        "mirna": "hsa-miR-320a-3p",
+        "score": 0.9602085471153259
+      },
+      {
+        "rank": 14,
+        "mirna": "hsa-miR-374b-5p",
+        "score": 0.9585437774658203
+      },
+      {
+        "rank": 15,
+        "mirna": "hsa-miR-92a-3p",
+        "score": 0.9581676244735717
+      },
+      {
+        "rank": 16,
+        "mirna": "hsa-miR-636",
+        "score": 0.9552548408508301
+      },
+      {
+        "rank": 17,
+        "mirna": "hsa-miR-186-5p",
+        "score": 0.951831829547882
+      },
+      {
+        "rank": 18,
+        "mirna": "hsa-miR-218-5p",
+        "score": 0.9498296976089478
+      },
+      {
+        "rank": 19,
+        "mirna": "hsa-miR-150-5p",
+        "score": 0.947426187992096
+      },
+      {
+        "rank": 20,
+        "mirna": "hsa-miR-132-3p",
+        "score": 0.9424110531806946
+      }
+    ]
+  },
+  "Tamoxifen": {
+    "drug_idx": 2,
+    "drug_name": "Tamoxifen",
+    "known_count": 318,
+    "top20": [
+      {
+        "rank": 1,
+        "mirna": "hsa-miR-99a-5p",
+        "score": 0.9940441370010376
+      },
+      {
+        "rank": 2,
+        "mirna": "hsa-miR-1915-3p",
+        "score": 0.9928313493728638
+      },
+      {
+        "rank": 3,
+        "mirna": "hsa-miR-130a-3p",
+        "score": 0.9925982832908631
+      },
+      {
+        "rank": 4,
+        "mirna": "hsa-miR-140-5p",
+        "score": 0.9920966863632202
+      },
+      {
+        "rank": 5,
+        "mirna": "hsa-miR-409-3p",
+        "score": 0.9898772954940795
+      },
+      {
+        "rank": 6,
+        "mirna": "hsa-miR-139-5p",
+        "score": 0.989859664440155
+      },
+      {
+        "rank": 7,
+        "mirna": "hsa-miR-23a-3p",
+        "score": 0.9895003080368042
+      },
+      {
+        "rank": 8,
+        "mirna": "hsa-miR-25-3p",
+        "score": 0.9889482975006103
+      },
+      {
+        "rank": 9,
+        "mirna": "hsa-miR-224-5p",
+        "score": 0.9883870482444763
+      },
+      {
+        "rank": 10,
+        "mirna": "hsa-miR-638",
+        "score": 0.986274802684784
+      },
+      {
+        "rank": 11,
+        "mirna": "hsa-miR-675-5p",
+        "score": 0.9860449075698853
+      },
+      {
+        "rank": 12,
+        "mirna": "hsa-miR-326",
+        "score": 0.9859408378601074
+      },
+      {
+        "rank": 13,
+        "mirna": "hsa-miR-584-5p",
+        "score": 0.9855577349662781
+      },
+      {
+        "rank": 14,
+        "mirna": "hsa-miR-663a",
+        "score": 0.9853076934814453
+      },
+      {
+        "rank": 15,
+        "mirna": "hsa-miR-483-3p",
+        "score": 0.9845744967460632
+      },
+      {
+        "rank": 16,
+        "mirna": "hsa-miR-150-5p",
+        "score": 0.9837674140930176
+      },
+      {
+        "rank": 17,
+        "mirna": "hsa-miR-204-5p",
+        "score": 0.9831048250198364
+      },
+      {
+        "rank": 18,
+        "mirna": "hsa-miR-454-3p",
+        "score": 0.9830453634262085
+      },
+      {
+        "rank": 19,
+        "mirna": "hsa-miR-532-5p",
+        "score": 0.9826075553894043
+      },
+      {
+        "rank": 20,
+        "mirna": "hsa-miR-590-5p",
+        "score": 0.9819918870925903
+      }
+    ]
+  }
+}
